@@ -24,7 +24,7 @@ public class ObjectEndpointTest {
     @Test
     public void add(){
         ObjectEndpoint objE = new ObjectEndpoint();
-        String response = objE.add(1,"Capgemini","http://www.capgemini.com","Capgemini India Pvt Ltd");
-        Assert.assertEquals("{\"id\":1,\"title\":\"Capgemini\",\"link\":\"http://www.capgemini.com\",\"desc\":\"Capgemini India Pvt Ltd\"}", response);
+        String response = objE.add(1,"AnjApps","http://www.anjapps.com","AnjApps India Pvt Ltd");
+        Assert.assertEquals("{\"id\":1,\"title\":\"AnjApps\",\"link\":\"http://www.anjapps.com\",\"desc\":\"AnjApps India Pvt Ltd\"}", response);
     }
 }
