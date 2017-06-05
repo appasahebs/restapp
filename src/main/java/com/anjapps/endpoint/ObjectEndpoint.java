@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.capgemini.endpoint;
+package com.anjapps.endpoint;
 
 import com.google.gson.Gson;
 import java.util.ArrayList;
@@ -16,16 +16,16 @@ import javax.ws.rs.core.MediaType;
 /* Root resource (exposed at "myresource" path) */
 @Path("object")
 public class ObjectEndpoint {
-    
+
     private final List<Object> tmpStore = new ArrayList<>();
     Gson gson = new Gson();
-    
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String get() {
         return "Object Get!";
     }
-    
+
     @GET
     @Path("/getAll")
     @Produces(MediaType.TEXT_PLAIN)
@@ -33,7 +33,7 @@ public class ObjectEndpoint {
         String output = "Object GetAll!";
         return output;
     }
-    
+
     @GET
     @Path("/add")
     @Produces(MediaType.TEXT_PLAIN)

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.capgemini.endpoint;
+package com.anjapps.endpoint;
 
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -14,5 +14,5 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 public class ObjectEndpointBDDTest {
-    
+
 }
