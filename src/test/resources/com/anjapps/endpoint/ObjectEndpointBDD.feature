@@ -13,3 +13,9 @@ Feature: URL Object Operations
       | 8   | fethry    | http://www.anjapps.com/  | AnjApps India Pvt Ltd |
     When the id '2' has been already exits don't add it again
     Then the total there should be '8' Urls.
+
+   Scenario: Add query parameter
+     Given the url and query data
+       |url | query|
+       |http://www.anjapps.com| id = 3|
+      Then result will be http://www.anjapps.com?id=3

@@ -46,4 +46,20 @@ public class ObjectEndpointBDDSteps {
         assertEquals(8, total);
 
     }
+
+    @Given("^the url and query data$")
+    public void the_url_and_query_data(DataTable arg1) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        // For automatic transformation, change DataTable to one of
+        // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
+        // E,K,V must be a scalar (String, Integer, Date, enum etc)
+        throw new PendingException();
+    }
+
+    @Then("^result will be http://www\\.anjapps\\.com\\?id=(\\d+)$")
+    public void result_will_be_http_www_anjapps_com_id(int arg1) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
 }
